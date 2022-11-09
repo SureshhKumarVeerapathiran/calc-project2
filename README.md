@@ -24,7 +24,7 @@ patibandla pavan
 ----
 ### Teammate's Contribution:  
 
-#### suresh samrat deva pasam 
+#### suresh
  
   
   ##### Assignment2:
