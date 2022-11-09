@@ -2,47 +2,43 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calculator.About"
-             Title="About">
-
-      <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Padding="30,24,30,24" >
-                <Label Text="Team Members" FontSize="18" FontAttributes="Bold" TextColor="White"/>
-            </StackLayout>
-        </StackLayout>
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="This project is an extension of MAUI calculator example,which we did for CROSS PLATFORM APPLICATION SUBJECTS" 
-                       FontSize="Small" TextColor="Black"/>
-                <Label Text="We three done this project" 
-                       FontSize="Small" TextColor="Black"/>
-                <Label Text="Suresh Kumar " 
-                       FontSize="Small" TextColor="Red"/>
-                <Label Text="Pavan" 
-                       FontSize="Small" TextColor="Red"/>
-                <Label Text="pratuasha" 
-                       FontSize="Small" TextColor="Red"/>
-                
-            </StackLayout>
-        </ScrollView>
-        <ScrollView Grid.Row="2">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10"  >
-               
-      
-                <Label Text="Created by beloved team 2022" FontSize="Small" TextColor="Black" HorizontalOptions="Center" />
-            </StackLayout>
-        </ScrollView>
-    </Grid>
-
+             Title="About"
+			 BackgroundColor="{DynamicResource PrimaryColor}">
+    <VerticalStackLayout Spacing="25" Padding="30">
+            <Label Text="Welcome to Calculator App"
+                VerticalOptions="Center"
+               FontSize="35"
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="Feature"
+                Text="The App designed by us"
+                HorizontalOptions="Center"
+                FontSize="15"/>
+            <Label
+                x:Name="Features"
+                HorizontalOptions="Center"
+                FontSize="15"/>
+         <VerticalStackLayout>
+        <Label 
+            Text="Sachin Samrat"
+              
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+                    <Label 
+            Text="Naga Pavan"
+              
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+              <Label 
+            Text="Yashwanth Gollapudi"
+              
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+            <Button
+            Text="Let's Go!"
+            MaximumWidthRequest="300"
+          
+          />
+        </VerticalStackLayout>
 </ContentPage>
